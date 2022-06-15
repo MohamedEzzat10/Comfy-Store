@@ -1,0 +1,158 @@
+:root{
+    --main-color : #fff;
+    --scond-color : rgb(213 73 73);
+    --title-product : rgb(129 96 96);
+    --nav-color: rgb(22 42 68);
+    --color-five :hsl(210deg 22% 49%) ;
+--black-color :black;
+
+    
+
+}
+/* nave */
+.nave .links ul li{
+    color:var(--nav-color) ;
+}
+.nave .cart i{
+    color: var(--nav-color);
+    }
+
+    @media (max-width : 792px){
+        .nave .icone-links{
+            color: var(--nav-color);
+        }
+        .nave .links ul{
+            background:var(--nav-color);
+
+        }
+        .nave .links ul li{
+            color:white ;
+        }
+    }
+
+
+/* title- products */
+.title-products {
+
+    margin: 70px 0;
+}
+.title-products h1{
+    color: var(--color-five);
+    letter-spacing: 1.6;
+}
+
+/* products */
+.products .content{
+    display: flex;
+
+}
+.left {
+   margin-right: 30px; 
+}
+
+.right{
+    width: 100%;
+}
+
+/* search and filter */
+.left .search input{
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid var(--color-five);
+    color: var(--nav-color);
+    transition: border 5s ;
+}
+.left .search input:focus{
+    border-color: var(--nav-color);
+}
+.filterByCompany{
+    margin: 20px  0 ;
+    width: 100%;
+}
+.filterByCompany .title {
+    color: var(--nav-color);
+    font-size: 24px;
+    font-family: 500;
+}
+ /* all company  */
+ .filterByCompany .all-company .company{
+    color: var(--nav-color);
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ .filterByCompany .all-company .company:hover{
+    color: var(--scond-color);
+
+ }
+
+
+
+/* filter by price */
+.filterByPrice{
+    margin: 20px 0;
+}
+.filterByPrice .title {
+    color: var(--nav-color);
+    font-size: 24px;
+    font-family: 600;
+}
+.filterByPrice .content-price{
+    display: flex;
+    flex-direction: column;
+}
+
+.filterByPrice input{
+    margin: 20px 0;
+    display: block;
+    width: 50%;
+
+
+}
+.filterByPrice .value {
+font-size: 24px;
+font-weight: 600;
+color: rgb(151, 139, 139);
+}
+
+
+
+
+
+ @media(max-width:767px){
+    .products .content{
+        display: flex;
+        flex-direction: column;
+    } 
+    .left .search input{
+        width: 100%;
+        margin: auto;
+    }
+    .filterByPrice .content-price{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+    }
+    .filterByCompany .all-company   {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+       
+    }
+
+    .filterByPrice input{
+       
+        width: 30%;
+    
+    
+    }
+    .filterByCompany .all-company .company{
+       padding: 0 10px;
+     }
+
+    
+}

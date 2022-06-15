@@ -1,0 +1,104 @@
+:root{
+    --main-color : #fff;
+    --scond-color : rgb(213 73 73);
+    --title-product : rgb(129 96 96);
+    --nav-color: rgb(22 42 68);
+    --color-five :hsl(210deg 22% 49%) ;
+--black-color :black;
+
+    
+
+}
+/* nave */
+.nave .links ul li{
+    color:var(--nav-color) ;
+}
+.nave .cart i{
+    color: var(--nav-color);
+    }
+
+    @media (max-width : 792px){
+        .nave .icone-links{
+            color: var(--nav-color);
+        }
+        .nave .links ul{
+            background:var(--nav-color);
+
+        }
+        .nave .links ul li{
+            color:white ;
+        }
+    }
+
+    /* title- products */
+.title-products {
+
+    margin: 70px 0;
+}
+.title-products h1{
+    color: var(--color-five);
+    letter-spacing: 1.6;
+}
+
+/* info product */
+.information{
+    display: flex;
+    gap: 40px;
+}
+
+.information img{
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.information .info .name{
+    font-size: 2.5rem;
+    color: var(--nav-color);
+}
+.information .info .company{
+    color: var(--title-product);
+    font-size: 2rem;
+    margin: 20px 0;
+}
+.information .info .price{
+    color: var(--nav-color);
+    font-size: 2rem;
+}
+.information .info .color {
+    display: flex;
+}
+.information .info .color span {
+    width: 20px;
+    height: 20px;
+    display:block;
+    border-radius: 50%; 
+    margin: 20px 3px;
+}
+
+.information .info .pro-info{
+    letter-spacing: 1.6;
+    color: rgb(165, 161, 161);
+    font-size: 1.2rem;
+    line-height: 2;
+
+}
+
+.information .info .btn-add-to-cart{
+    text-align: center;
+    width: fit-content;
+    border-radius: 6px;
+    /* border: 1px solid --main-color; */
+    background: var(--scond-color);
+    color: var(--main-color);
+    padding: 9px 31px;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 20px 0;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+
+
+
